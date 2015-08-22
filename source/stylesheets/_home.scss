@@ -1,0 +1,135 @@
+@import "variables_mixins";
+
+body {
+  background: url('../images/grid-bg.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: "brandon-grotesque";
+  text-align: center;
+  margin: 0;
+}
+
+header {
+  background-color: rgba(255,255,255,.2);
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  h1 {
+    color: #000;
+    font-family: "fira-sans";
+    font-size: .675em;
+    letter-spacing: .09em;
+    font-weight: 100;
+    margin: 0;
+    line-height: 80px;
+    text-transform: uppercase;
+    @include breakpoint(tablet-desktop) {
+      font-size: 2.5em;
+    }
+    span {
+      margin-right: 5px;
+      @include breakpoint(tablet-desktop) {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+.one {
+  background: url('../images/gradient-1.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: scroll;
+  width: 100%;
+}
+
+.two {
+  background: url('../images/gradient-2.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: scroll;
+  width: 100%;
+}
+
+.three {
+  background: url('../images/gradient-3.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: scroll;
+  width: 100%;
+}
+.four {
+  background: url('../images/gradient-4.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: scroll;
+  width: 100%;
+}
+.five {
+  background: url('../images/gradient-1.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: scroll;
+  width: 100%;
+}
+
+.six {
+  background: url('../images/gradient-2.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: scroll;
+  width: 100%;
+}
+
+.seven {
+  background: url('../images/gradient-3.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: scroll;
+  width: 100%;
+}
+
+.eight {
+  background: url('../images/gradient-4.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: scroll;
+  width: 100%;
+}
+.nine {
+  background: url('../images/gradient-1.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: scroll;
+  width: 100%;
+}
+.ten {
+  background: url('../images/gradient-2.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: scroll;
+  width: 100%;
+}
+
