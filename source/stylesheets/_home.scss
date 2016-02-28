@@ -31,6 +31,7 @@ body {
   margin: 0;
   position: relative;
   height: 100%;
+  overflow-x: hidden;
 }
 
 header {
@@ -61,14 +62,11 @@ header {
 }
 
 section {
-  border: 2px solid yellow;
-  background: url('../images/gradient-1.png') no-repeat center center fixed;
-  background-size: cover;
-  background-attachment: scroll;
+  border: 1px solid red;
+  // background: #fff;
   width: 100%;
 
   .content {
-    border: 2px solid green;
     display: flex;
     align-items: center;
     text-align: center;
@@ -78,5 +76,59 @@ section {
     .wrapper {
       margin: 0 auto;
     }
+  }
+
+  &.one {
+    background: url('../images/header-bg-2.png') no-repeat fixed;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: bottom center;
+
+    .wrapper {
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+
+    .scroll-to {
+      cursor: pointer;
+      position: absolute;
+      bottom: 60px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      max-width: 40px;
+    }
+  }
+
+  &.two {
+    background: url('../images/love-bg.png') no-repeat top left fixed;
+    background-size: cover;
+    background-attachment: scroll;
+    position: relative;
+    z-index: -999;
+  }
+
+  &.three {
+    background: url('../images/3.png') no-repeat bottom center fixed;
+    background-size: cover;
+    background-attachment: scroll;
+  }
+
+  &.four {
+    background: url('../images/4.png') no-repeat bottom center;
+    background-size: 100%;
+    padding: 300px;
+    position: relative;
+    z-index: -999;
+    margin-top: -40%;
+    @include breakpoint(tablet-desktop) {
+      margin-top: -5%;
+    }
+  }
+
+  &.five {
+    padding: 200px;
+    margin-top: 20px;
   }
 }

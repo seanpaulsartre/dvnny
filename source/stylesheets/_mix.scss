@@ -34,9 +34,9 @@ $selection_text: #fff;
     @media screen and (min-width: 768px) { @content; }
   }
   @else if $point == desktop {
-    @media (min-width: 1171px) { @content; }
+    @media (min-width: 1298px) { @content; }
   }
   @else if $point == desktop-large {
-    @media (min-width: 1400px) { @content; }
+    @media (min-width: 1455px) { @content; }
   }
 }
