@@ -1,7 +1,7 @@
 @import "mix";
 
 .no-js #preload { display: none;  }
-.js #preload {
+#preload {
   display: block;
   position: absolute;
   left: 0;
@@ -62,8 +62,6 @@ header {
 }
 
 section {
-  border: 1px solid red;
-  // background: #fff;
   width: 100%;
 
   .content {
@@ -113,22 +111,63 @@ section {
     background: url('../images/3.png') no-repeat bottom center fixed;
     background-size: cover;
     background-attachment: scroll;
+    margin-top: -20%;
+
+    @include breakpoint(tablet-desktop) {
+      margin-top: -10%;
+
+      .content {
+        margin-top: 10%;
+      }
+    }
+
+    .wrapper {
+      width: 100%;
+    }
   }
 
   &.four {
     background: url('../images/4.png') no-repeat bottom center;
     background-size: 100%;
-    padding: 300px;
+    padding: 200px 50px;
     position: relative;
     z-index: -999;
     margin-top: -40%;
     @include breakpoint(tablet-desktop) {
       margin-top: -5%;
+      padding: 300px;
+    }
+
+    img {
+      max-width: 100px;
+      margin: 0 auto;
+
+      @include breakpoint(tablet-desktop) {
+        max-width: 400px;
+      }
     }
   }
 
   &.five {
-    padding: 200px;
     margin-top: 20px;
+  }
+
+  &.six {
+    background: url('../images/5.png') no-repeat top left fixed;
+    background-size: cover;
+    background-attachment: scroll;
+    position: relative;
+    z-index: 999;
+  }
+
+  &.seven {
+    background: url('../images/6.jpg') no-repeat top left fixed;
+    background-size: cover;
+    margin-top: -20%;
+    z-index: -999;
+
+    .content {
+      padding-top: 20%;
+    }
   }
 }

@@ -1,0 +1,23 @@
+@import "mix";
+
+nav {
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 40px;
+  width: auto;
+
+  @include breakpoint(tablet-desktop) {
+    top: 30%;
+  }
+
+  h1 {
+    margin: 0;
+    font-weight: normal;
+  }
+
+  a {
+    padding: 0 30px;
+  }
+}

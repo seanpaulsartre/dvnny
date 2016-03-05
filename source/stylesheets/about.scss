@@ -1,0 +1,26 @@
+@import "work";
+
+.about {
+  .wrapper {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    @include breakpoint(tablet-desktop) {
+      padding: 100px 200px;
+      width: 100%;
+    }
+
+    img {
+      max-width: 50px;
+
+      @include breakpoint(tablet-desktop) {
+        max-width: 200px;
+      }
+    }
+
+    p {
+      text-align: left;
+      padding-left: 40px;
+    }
+  }
+}

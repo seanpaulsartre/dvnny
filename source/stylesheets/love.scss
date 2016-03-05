@@ -1,0 +1,33 @@
+@import "mix";
+
+img.quote {
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+img.icon {
+  position: absolute;
+
+  &.blue {
+    top: 35%;
+    left: 5%;
+    max-width: 170px;
+  }
+
+  &.green {
+    top: 75%;
+    right: 15%;
+    max-width: 150px;
+  }
+
+  &.yin {
+    top: 15%;
+    left: 37%;
+    max-width: 50px;
+  }
+  &.alien {
+    bottom: 2%;
+    left: 40%;
+    max-width: 50px;
+  }
+}
