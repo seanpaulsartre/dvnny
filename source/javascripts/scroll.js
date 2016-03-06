@@ -14,13 +14,10 @@ var Site = {
     window.sr = new scrollReveal();
     Site.fillBrowser();
 
-    $('[data-behavior="scroll-to-two"]').on('click', function() {
-      Site.scrollToEl('.two');
+    $('[data-behavior="scroll-to"]').on('click', function(el) {
+      var el = $(this).attr('data-id');
+      $(el).velocity("scroll", { duration: 1000});
     });
-  },
-
-  scrollToEl: function(element) {
-    $(element).velocity("scroll", { duration: 1000});
   },
 
   fillBrowser: function() {
@@ -30,8 +27,6 @@ var Site = {
 
     var module = $('.size');
     module.css('height', SiteHeight);
-    // var moduleBig = $('.four');
-    // module.css('height', bigHeight);
   },
 
   resizeWindow: function() {
