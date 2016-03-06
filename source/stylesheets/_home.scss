@@ -114,7 +114,7 @@ section {
     margin-top: -20%;
 
     @include breakpoint(tablet-desktop) {
-      margin-top: -10%;
+      margin-top: -20%;
 
       .content {
         margin-top: 10%;
@@ -128,22 +128,19 @@ section {
 
   &.four {
     background: url('../images/4.png') no-repeat bottom center;
-    background-size: 100%;
-    padding: 200px 50px;
+    background-size: cover;
     position: relative;
+    margin-top: -20%;
     z-index: -999;
-    margin-top: -40%;
     @include breakpoint(tablet-desktop) {
-      margin-top: -5%;
-      padding: 300px;
+      margin-top: -10%;
     }
-
+    
     img {
-      max-width: 100px;
-      margin: 0 auto;
-
+      width: 40%;
       @include breakpoint(tablet-desktop) {
-        max-width: 400px;
+        width: 20%;
+        margin-top: 50px;
       }
     }
   }

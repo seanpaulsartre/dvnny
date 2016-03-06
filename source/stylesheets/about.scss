@@ -3,15 +3,15 @@
 .about {
   .wrapper {
     padding: 10px 20px;
-    display: flex;
-    align-items: center;
     @include breakpoint(tablet-desktop) {
+      display: flex;
+      align-items: center;
       padding: 100px 200px;
       width: 100%;
     }
 
     img {
-      max-width: 50px;
+      max-width: 80px;
 
       @include breakpoint(tablet-desktop) {
         max-width: 200px;
@@ -20,7 +20,9 @@
 
     p {
       text-align: left;
-      padding-left: 40px;
+      @include breakpoint(tablet-desktop) {
+        padding-left: 40px;
+      }
     }
   }
 }
