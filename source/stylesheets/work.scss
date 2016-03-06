@@ -25,7 +25,7 @@
     img {
       width: 60%;
       @include breakpoint(tablet-desktop) {
-        width: 100%;
+        width: 80%;
       }
     }
   }
