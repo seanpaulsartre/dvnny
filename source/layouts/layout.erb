@@ -13,10 +13,14 @@
 <body class="<%= page_classes %>">
   <div id="preload">LOOOOOAADDDINNNNNGGG</div>
   <%= yield %>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="javascripts/vendor/zepto.js"></script>
-  <script src="javascripts/vendor/scrollReveal.js"></script>
   <script src="javascripts/vendor/velocity.js"></script>
   <script src="javascripts/scroll.js"></script>
   <script>$(function($){ Site.initialize(); });</script>
+  <script type="text/javascript" src="javascripts/vendor/skrollr.js"></script>
+  <script type="text/javascript">
+    var s = skrollr.init();
+  </script>
 </body>
 </html>

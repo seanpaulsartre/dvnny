@@ -11,7 +11,7 @@ var Site = {
     SiteWidth = $(window).width();
     SiteHeight = $(window).height();
     $(window).resize(Site.resizeWindow);
-    window.sr = new scrollReveal();
+    
     Site.fillBrowser();
 
     $('[data-behavior="scroll-to"]').on('click', function(el) {
