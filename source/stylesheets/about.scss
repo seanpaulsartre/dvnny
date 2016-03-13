@@ -3,10 +3,13 @@
 .about {
   .wrapper {
     padding: 10px 20px;
+
     @include breakpoint(tablet-desktop) {
       display: flex;
       align-items: center;
       padding: 100px 20px;
+      max-width: 700px;
+      margin: 0 auto;
       width: 100%;
     }
 
@@ -19,6 +22,8 @@
     }
 
     p {
+      font-family: "Roboto Mono";
+      font-size: .75em;
       text-align: left;
       @include breakpoint(tablet-desktop) {
         padding-left: 40px;
