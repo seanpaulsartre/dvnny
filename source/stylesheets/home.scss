@@ -26,7 +26,6 @@ a {
 }
 
 body {
-
   text-align: center;
   margin: 0;
   position: relative;
@@ -49,7 +48,7 @@ section {
     }
   }
 
-  &.one {
+  &.banner {
     background: url('../images/header-bg-2.png') no-repeat fixed;
     background-size: cover;
     background-attachment: scroll;

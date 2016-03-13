@@ -5,30 +5,49 @@ nav {
   color: #fff;
   position: absolute;
   top: 0;
-  right: 40px;
+  right: 5%;
   width: auto;
 
   @include breakpoint(tablet-desktop) {
-    top: 30%;
+    top: 35%;
   }
 
   h1 {
-    font-family: 'Roboto Mono';
-    font-weight: 300;
+    font-family: 'Raleway';
+    font-weight: 100;
     text-transform: uppercase;
-    letter-spacing: .325em;
-    margin: 0 0 20px 0;
+    letter-spacing: .425em;
+    margin: 0 0 35px 0;
     font-size: 1em;
-    font-weight: normal;
+    padding-left: 25px;
   }
 
   a {
+    font-family: 'Raleway';
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: .325em;
+    font-size: .575em;
+    cursor: pointer;
+    padding-left: 25px;
+  }
+}
+
+.banner {
+  p {
+    color: #22e439;
     font-family: 'Roboto Mono';
     font-weight: 300;
     text-transform: uppercase;
-    letter-spacing: .325em;
-    font-size: .75em;
-    cursor: pointer;
-    padding: 0 30px;
+    letter-spacing: .425em;
+    font-size: .525em;
+    position: absolute;
+    top: 102%;
+    left: -30px;
+    transform: rotate(-90deg);
+
+    span {
+      margin-right: 30px;
+    }
   }
 }
