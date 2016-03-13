@@ -71,12 +71,19 @@ section {
     }
   }
 
-  &.two {
+  &.time-space-love {
     background: url('../images/love-bg.png') no-repeat top left fixed;
     background-size: cover;
     background-attachment: scroll;
     position: relative;
     z-index: -999;
+
+    .wrapper {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+    }
   }
 
   &.three {

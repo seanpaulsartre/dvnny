@@ -1,25 +1,17 @@
 @import "mix";
 
-#love {
-
-  .wrapper {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-  }
+.time-space-love {
 
   .parallax {
     position: absolute;
     color: #fff;
     top: 0;
-    z-index: 99999999;
-
+    z-index: 999999;
 
     &.alien {
-      left: 30px;
+      left: 52%;
       width: 30px;
-      margin-top: 180px;
+      margin-top: 230px;
 
       img {
         width: 30px;
@@ -30,7 +22,7 @@
     &.quote {
       left: 0;
       right: 0;
-      margin: 0 auto;
+      margin: -100px auto 0 auto;
       width: 150px;
 
       img {
@@ -39,30 +31,56 @@
     }
 
     &.weed-green {
-      left: 120px;
-      width: 80px;
+      right: 70px;
+      margin-top: 80px;
+      width: 150px;
 
       img {
-        width: 80px;
+        width: 150px;
       }
     }
 
     &.weed-blue {
-      right: 140px;
-      width: 40px;
-
+      left: 70px;
+      width: 130px;
+      margin-top: 90px;
       img {
-        width: 40px;
+        width: 130px;
       }
     }
 
     &.yinyang {
-      right: 50px;
-      margin-top: 100px;
+      left: 220px;
       width: 60px;
-
+      margin-top: -250px;
       img {
         width: 60px;
+      }
+    }
+  }
+
+  .counters {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    justify-content: space-between;
+    padding: 0 80px;
+    width: 100%;
+    top: 75%;
+
+    li {
+      span {
+        font-family: 'Roboto Mono';
+        font-weight: 400;
+        font-size: .625em;
+      }
+
+      img {
+        width: 40px;
+        margin-right: 5px;
       }
     }
   }
