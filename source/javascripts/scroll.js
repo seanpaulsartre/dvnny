@@ -11,12 +11,23 @@ var Site = {
     SiteWidth = $(window).width();
     SiteHeight = $(window).height();
     $(window).resize(Site.resizeWindow);
-    
+
     Site.fillBrowser();
 
     $('[data-behavior="scroll-to"]').on('click', function(el) {
       var el = $(this).attr('data-id');
       $(el).velocity("scroll", { duration: 1000});
+    });
+
+    $window = $(window);
+    $('[data-type="position"]').each(function(){
+      var $scroll = $(this);
+       $(window).scroll(function() {
+         var pos = -($window.scrollTop() / $scroll.data('speed'));
+         var oneHeight = $('.size').height() - 200;
+         var offsetTop = oneHeight + pos + 'px';
+         $scroll.css({ top: offsetTop });
+       });
     });
   },
 

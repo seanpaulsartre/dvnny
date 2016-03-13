@@ -13,11 +13,21 @@ nav {
   }
 
   h1 {
-    margin: 0;
+    font-family: 'Roboto Mono';
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: .325em;
+    margin: 0 0 20px 0;
+    font-size: 1em;
     font-weight: normal;
   }
 
   a {
+    font-family: 'Roboto Mono';
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: .325em;
+    font-size: .75em;
     cursor: pointer;
     padding: 0 30px;
   }

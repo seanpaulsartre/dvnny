@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
   <title><%= current_page.data.title || "Project Site" %></title>
   <%= stylesheet_link_tag "application" %>
-  <script src="//use.typekit.net/yuo6xhc.js"></script>
-  <script>try{Typekit.load();}catch(e){}</script>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
 </head>
 
 <body class="<%= page_classes %>">
@@ -18,9 +18,5 @@
   <script src="javascripts/vendor/velocity.js"></script>
   <script src="javascripts/scroll.js"></script>
   <script>$(function($){ Site.initialize(); });</script>
-  <script type="text/javascript" src="javascripts/vendor/skrollr.js"></script>
-  <script type="text/javascript">
-    var s = skrollr.init();
-  </script>
 </body>
 </html>

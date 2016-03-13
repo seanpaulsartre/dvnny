@@ -5,25 +5,65 @@
   .wrapper {
     position: relative;
     overflow: hidden;
-    border: 2px solid red;
     width: 100%;
     height: 100%;
   }
 
   .parallax {
-    background-repeat: no-repeat;
-    background-position: 0 0;
     position: absolute;
-    background-size: contain;
-    z-index: 999;
+    color: #fff;
+    top: 0;
+    z-index: 99999999;
+
+
+    &.alien {
+      left: 30px;
+      width: 30px;
+      margin-top: 180px;
+
+      img {
+        width: 30px;
+      }
+    }
+
+
     &.quote {
-      height: 231px;
-      width: 267px;
-      top: 100px;
-      right: 0;
       left: 0;
+      right: 0;
       margin: 0 auto;
-      background-image: url('../images/love-quote.png');
+      width: 150px;
+
+      img {
+        width: 150px;
+      }
+    }
+
+    &.weed-green {
+      left: 120px;
+      width: 80px;
+
+      img {
+        width: 80px;
+      }
+    }
+
+    &.weed-blue {
+      right: 140px;
+      width: 40px;
+
+      img {
+        width: 40px;
+      }
+    }
+
+    &.yinyang {
+      right: 50px;
+      margin-top: 100px;
+      width: 60px;
+
+      img {
+        width: 60px;
+      }
     }
   }
 }
