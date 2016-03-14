@@ -1,31 +1,61 @@
 @import "mix";
-
-.work-slider {
-  width: 100%;
-  position: relative;
-
+.work-section {
+  .wrapper {
+    padding: 0 20px;
+  }
   .arrow {
-    position: absolute;;
-    top: 50%;
-    transform: translateY(-50%);
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-40%);
+    z-index: 99999;
+    width: 15px;
+    @include breakpoint(tablet-desktop) {
+      width: 20px;
+    }
 
     &.left {
-      left: 20px;
+      left:20px;
     }
 
     &.right {
-      right: 20px;
+      right:20px;
+    }
+    img {
+      width: 100%;
     }
   }
+}
 
-  .slide {
-    max-width: 700px;
+.work-slider {
+  position: relative;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  margin: 30px auto;
+  z-index: 10;
+
+  .slide-container {
+    position: relative;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
     margin: 0 auto;
+    z-index: 12;
 
-    img {
-      width: 60%;
-      @include breakpoint(tablet-desktop) {
-        width: 80%;
+    li {
+      position: relative;
+      display: block;
+      float: left;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      min-width: 600px;
+
+      img {
+        width: 100%;
       }
     }
   }
