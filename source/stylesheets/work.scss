@@ -2,25 +2,35 @@
 .work-section {
   .wrapper {
     padding: 0 20px;
+    position: relative;
   }
+
   .arrow {
     cursor: pointer;
     position: absolute;
-    top: 40%;
+    top: 55%;
     transform: translateY(-40%);
     z-index: 99999;
-    width: 15px;
+    width: 8px;
     @include breakpoint(tablet-desktop) {
+      top: 40%;
       width: 20px;
     }
 
     &.left {
-      left:20px;
+      left: 10px;
+      @include breakpoint(tablet-desktop) {
+        left: 20px;
+      }
     }
 
     &.right {
-      right:20px;
+      right: 10px;
+      @include breakpoint(tablet-desktop) {
+        right: 20px;
+      }
     }
+
     img {
       width: 100%;
     }
@@ -52,7 +62,11 @@
       margin: 0;
       padding: 0;
       text-align: center;
-      min-width: 600px;
+      min-width: 275px;
+
+      @include breakpoint(tablet-desktop) {
+        min-width: 600px;
+      }
 
       img {
         width: 100%;
