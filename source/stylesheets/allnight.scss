@@ -1,0 +1,38 @@
+@import "mix";
+
+.upallnight {
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .gif {
+    max-width: 200px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .smoke-left {
+    background: url('../images/smoke-left.png') no-repeat;
+    background-size: 100%;
+    position: relative;
+    z-index: 999;
+    height: 200px;
+    width: 20%;
+  }
+
+  .smoke-right {
+    background: url('../images/smoke-right.png') no-repeat;
+    background-size: 100%;
+    background-position: right;
+    position: relative;
+    z-index: 999;
+    height: 200px;
+    width: 20%;
+  }
+}
