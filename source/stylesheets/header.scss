@@ -1,17 +1,39 @@
 @import "mix";
 
+.headshot {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.dvnny-headshot {
+  width: 60%;
+  margin: 0 auto;
+
+  @include breakpoint(tablet-desktop) {
+    width: 50%;
+  }
+
+  @include breakpoint(desktop-large) {
+    width: 40%;
+  }
+}
+
 nav {
   text-align: center;
   color: #fff;
   position: absolute;
   top: 0;
-  right: 5%;
+  right: 15%;
   width: auto;
 
   @include breakpoint(tablet-desktop) {
+    right: 8%;
     top: 35%;
   }
-
+  @include breakpoint(desktop-large) {
+    right: 12%;
+  }
   h1, a {
     font-family: 'Raleway';
     font-weight: 100;

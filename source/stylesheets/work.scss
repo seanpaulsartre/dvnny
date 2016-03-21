@@ -3,8 +3,16 @@
   .wrapper {
     padding: 0 20px;
     position: relative;
+    text-align: center;
   }
 
+  .title {
+    position: absolute;
+    top: -200px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
   .arrow {
     cursor: pointer;
     position: absolute;
@@ -15,6 +23,10 @@
     @include breakpoint(tablet-desktop) {
       top: 40%;
       width: 20px;
+    }
+
+    @include breakpoint(desktop) {
+      top: 50%;
     }
 
     &.left {
@@ -42,7 +54,7 @@
   padding: 0;
   list-style: none;
   overflow: hidden;
-  margin: 30px auto;
+  margin: -100px auto 0 auto;
   z-index: 10;
 
   .slide-container {
@@ -55,7 +67,7 @@
     margin: 0 auto;
     z-index: 12;
 
-    li {
+    li.slide {
       position: relative;
       display: block;
       float: left;
@@ -66,6 +78,12 @@
 
       @include breakpoint(tablet-desktop) {
         min-width: 600px;
+
+        &.vertical {
+          img {
+            max-width: 400px;
+          }
+        }
       }
 
       img {

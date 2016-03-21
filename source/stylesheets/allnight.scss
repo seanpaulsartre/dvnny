@@ -10,10 +10,16 @@
   }
 
   .gif {
-    max-width: 200px;
+    width: 30%;
 
     img {
       width: 100%;
+    }
+    @include breakpoint(tablet-desktop) {
+      width: 20%;
+    }
+    @include breakpoint(desktop) {
+      width: 15%;
     }
   }
 
@@ -24,6 +30,14 @@
     z-index: 999;
     height: 200px;
     width: 20%;
+
+    @include breakpoint(desktop) {
+      height: 300px;
+    }
+
+    @include breakpoint(desktop-large) {
+      height: 400px;
+    }
   }
 
   .smoke-right {
@@ -34,5 +48,13 @@
     z-index: 999;
     height: 200px;
     width: 20%;
+
+    @include breakpoint(desktop) {
+      height: 300px;
+    }
+
+    @include breakpoint(desktop-large) {
+      height: 400px;
+    }
   }
 }

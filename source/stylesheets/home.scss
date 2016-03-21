@@ -31,6 +31,18 @@ body {
   position: relative;
   height: 100%;
   overflow-x: hidden;
+
+  @include breakpoint(tablet-desktop) {
+    border:2px solid red;
+  }
+
+  @include breakpoint(desktop) {
+    border: 2px solid green;
+  }
+
+  @include breakpoint(desktop-large) {
+    border: 2px solid blue;
+  }
 }
 
 section {
@@ -49,10 +61,10 @@ section {
   }
 
   &.banner {
-    background: url('../images/header-bg-2.png') no-repeat fixed;
+    background: url('../images/da-space-bg.png') no-repeat fixed;
     background-size: cover;
     background-attachment: scroll;
-    background-position: bottom center;
+    background-position: top center;
 
     .wrapper {
       width: 100%;
@@ -77,12 +89,20 @@ section {
     background-attachment: scroll;
     position: relative;
     z-index: -999;
-
+    margin-top: -30%;
     .wrapper {
       position: relative;
       overflow: hidden;
       width: 100%;
       height: 100%;
+    }
+
+    @include breakpoint(tablet-desktop) {
+      margin-top: -20%;
+    }
+
+    @include breakpoint(desktop) {
+      margin-top: 0;
     }
   }
 
@@ -95,11 +115,26 @@ section {
     @include breakpoint(tablet-desktop) {
       margin-top: -20%;
 
-      .content {
-        margin-top: 10%;
+      .wrapper {
+        margin-top: 20%;
       }
     }
 
+    @include breakpoint(desktop) {
+      margin-top: -8%;
+
+      .wrapper {
+        margin-top: 5%;
+      }
+    }
+
+    @include breakpoint(desktop-large) {
+      margin-top: 0;
+
+      .content {
+        margin-top: 0;
+      }
+    }
     .wrapper {
       width: 100%;
     }
