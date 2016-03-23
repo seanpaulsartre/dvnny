@@ -94,10 +94,10 @@ var Site = {
   fillBrowser: function() {
     SiteWidth = $(window).width();
     SiteHeight = $(window).height();
-    bigHeight = SiteHeight + 100;
+    bigHeight = SiteHeight + 150;
 
     var module = $('.size');
-    module.css('height', SiteHeight);
+    module.css('height', bigHeight);
   },
 
   resizeWindow: function() {

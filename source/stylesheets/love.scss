@@ -1,6 +1,27 @@
 @import "mix";
 
 .time-space-love {
+  background: url('../images/love-bg.png') no-repeat top left fixed;
+  background-size: cover;
+  background-attachment: scroll;
+  position: relative;
+  z-index: -999;
+  margin-top: -40%;
+
+  @media only screen and (min-width: 600px) {
+    margin-top: -30%;
+  }
+
+  @media only screen and (min-width: 1000px) {
+    margin-top: -16%;
+  }
+
+  .wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
 
   .parallax {
     position: absolute;
@@ -29,12 +50,8 @@
         width: 100%;
       }
 
-      @include breakpoint(tablet-desktop) {
-        width: 25%;
-      }
-
-      @include breakpoint(desktop-large) {
-        width: 18%;
+      @media only screen and (min-width: 600px) {
+        width: 20%;
       }
     }
 
@@ -44,7 +61,11 @@
       width: 190px;
 
       img {
-        width: 190px;
+        width: 130px;
+
+        @media only screen and (min-width: 600px) {
+          width: 190px;
+        }
       }
 
       @include breakpoint(tablet-desktop) {
@@ -56,8 +77,13 @@
       left: 10px;
       width: 150px;
       margin-top: 90px;
+
       img {
-        width: 150px;
+        width: 120px;
+
+        @media only screen and (min-width: 600px) {
+          width: 150px;
+        }
       }
 
 
@@ -88,12 +114,13 @@
     align-items: center;
     position: absolute;
     justify-content: space-between;
-    padding: 0 80px;
+    padding: 0 20px;
     width: 100%;
     top: 75%;
 
     @include breakpoint(desktop) {
-     top: 90%;
+      padding: 0 80px;
+     top: 80%;
     }
 
     li {

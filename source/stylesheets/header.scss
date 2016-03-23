@@ -8,14 +8,51 @@
 
 .dvnny-headshot {
   width: 60%;
-  margin: 0 auto;
+  margin: -150px auto 0 auto;
 
-  @include breakpoint(tablet-desktop) {
-    width: 50%;
+  @media only screen and (min-width: 768px) {
+    width: 35%;
+  }
+}
+
+.banner {
+  background: url('../images/da-space-bg.png') no-repeat fixed;
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: bottom center;
+  z-index: 99999;
+
+  .wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
   }
 
-  @include breakpoint(desktop-large) {
-    width: 40%;
+  .scroll-to {
+    cursor: pointer;
+    position: absolute;
+    bottom: 180px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    max-width: 40px;
+  }
+
+  p {
+    color: #22e439;
+    font-family: 'Roboto Mono';
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: .425em;
+    font-size: .525em;
+    position: absolute;
+    top: 86%;
+    left: -30px;
+    transform: rotate(-90deg);
+
+    span {
+      margin-right: 30px;
+    }
   }
 }
 
@@ -23,17 +60,21 @@ nav {
   text-align: center;
   color: #fff;
   position: absolute;
-  top: 0;
-  right: 15%;
+  top: 30px;
+  right: 0;
+  left: 0;
   width: auto;
 
-  @include breakpoint(tablet-desktop) {
+  @media only screen and (min-width: 768px) {
     right: 8%;
+    left: auto;
     top: 35%;
   }
-  @include breakpoint(desktop-large) {
+
+  @media only screen and (min-width: 1400px) {
     right: 12%;
   }
+
   h1, a {
     font-family: 'Raleway';
     font-weight: 100;
@@ -50,24 +91,5 @@ nav {
   a {
     font-size: .575em;
     cursor: pointer;
-  }
-}
-
-.banner {
-  p {
-    color: #22e439;
-    font-family: 'Roboto Mono';
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: .425em;
-    font-size: .525em;
-    position: absolute;
-    top: 102%;
-    left: -30px;
-    transform: rotate(-90deg);
-
-    span {
-      margin-right: 30px;
-    }
   }
 }
