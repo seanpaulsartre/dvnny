@@ -7,7 +7,7 @@
     @include breakpoint(tablet-desktop) {
       display: flex;
       align-items: center;
-      padding: 100px 20px;
+      padding: 200px 20px;
       max-width: 700px;
       margin: 0 auto;
       width: 100%;
@@ -20,23 +20,27 @@
         max-width: 800px;
       }
     }
-
-    img {
-      max-width: 80px;
+    .title {
+      max-width: 220px;
+    }
+    .gif {
+      max-width: 120px;
       width: 100%;
+
       @include breakpoint(tablet-desktop) {
-        max-width: 200px;
+        max-width: 330px;
       }
     }
 
     p {
       font-family: "Roboto Mono";
-      font-size: .75em;
+      font-size: .675em;
       letter-spacing: .09em;
       line-height: 1.75em;
       text-align: left;
+      margin-top: 20px;
       @include breakpoint(tablet-desktop) {
-        padding-left: 40px;
+        padding-left: 60px;
       }
     }
   }

@@ -26,6 +26,29 @@
     width: 100%;
     height: 100%;
     position: relative;
+    
+    .star {
+      position: absolute;
+      color: #fff;
+      z-index: 999999;
+
+      &.one {
+        top: 80px;
+        left: 30px;
+      }
+      &.two {
+        top: 140px;
+        left: 300px;
+      }
+      &.three {
+        top: 111px;
+        right: 400px;
+      }
+      &.four {
+        top: 220px;
+        right:190px;
+      }
+    }
   }
 
   .scroll-to {
