@@ -7,13 +7,15 @@
   left: 0;
   top: 0;
   right: 0;
-  padding: 60px;
+  letter-spacing: .22em;
+  padding: 120px 0 0 0;
   width: 100%;
   height: 100%;
   overflow: hidden;
   background: rgba(220, 183, 255, 1);
   color: #fff;
   font-size: 1em;
+  text-align: center;
   z-index: 99999999;
 }
 
@@ -24,6 +26,8 @@ a {
     color: aquamarine;
   }
 }
+
+
 
 body {
   background: transparent;
