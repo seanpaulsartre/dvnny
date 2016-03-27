@@ -50,7 +50,7 @@ $default-prefixes: webkit moz ms o;
       left: 100%;
       height: 100%;
       width: 100%;
-      background-image: url(../images/contact-bg.png); // Apologies to Damien Hirst.
+      background-image: url(../images/contact-bg.png);
       @include transform-origin();
    }
     }

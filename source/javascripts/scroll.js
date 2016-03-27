@@ -30,6 +30,17 @@ var Site = {
        });
     });
 
+
+    $('[data-type="pos"]').each(function(){
+      var $scroll = $(this);
+       $(window).scroll(function() {
+        var num = $window.scrollTop() + 100;
+         var pos = -(num / $scroll.data('id'));
+         var oneHeight = $('.banner').height() - 200;
+         var offsetTop = oneHeight + pos + 'px';
+         $scroll.css({ top: offsetTop });
+       });
+    });
     var expires = new Date();
     expires.setSeconds(expires.getSeconds() + 193212890);
     var counter = setInterval(timer, 1);
@@ -98,6 +109,9 @@ var Site = {
 
     var module = $('.size');
     module.css('height', bigHeight);
+
+    var contact = $('.contain-k');
+    contact.css('min-height', SiteHeight * 2);
   },
 
   resizeWindow: function() {

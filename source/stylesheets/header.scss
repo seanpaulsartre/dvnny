@@ -26,27 +26,32 @@
     width: 100%;
     height: 100%;
     position: relative;
-    
+
     .star {
       position: absolute;
       color: #fff;
       z-index: 999999;
+      opacity: .6;
 
       &.one {
-        top: 80px;
+        margin-top: -520px;
+        top: 20%;
         left: 30px;
       }
       &.two {
-        top: 140px;
-        left: 300px;
+        margin-top: -130px;
+        top: 5%;
+        left: 310px;
       }
       &.three {
-        top: 111px;
-        right: 400px;
+        margin-top: -50px;
+        top: 70%;
+        right: 420px;
       }
       &.four {
-        top: 220px;
-        right:190px;
+        margin-top: -500px;
+        top: 32%;
+        right: 70px;
       }
     }
   }
@@ -62,7 +67,7 @@
   }
 
   p {
-    color: #22e439;
+    color: #faebd7;
     font-family: 'Roboto Mono';
     font-weight: 300;
     text-transform: uppercase;
@@ -114,5 +119,12 @@ nav {
   a {
     font-size: .575em;
     cursor: pointer;
+    color: #fff;
+    transition: color .5s;
+
+    &:hover {
+      color: #000;
+      transition: color .5s;
+    }
   }
 }

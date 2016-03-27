@@ -10,10 +10,18 @@
     min-height: 1350px;
   }
 
+  .info {
+    margin-top: 60%;
+    position: absolute;
+    z-index: 99999;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
 
   img {
     position: absolute;
-    top: 50%;
+    top: 0;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -22,12 +30,12 @@
 
   a {
     position: absolute;
-    top: 60%;
+    top: 0;
     z-index: 999999999999;
     display: block;
     margin-top: 120px;
     font-family: 'Raleway';
-    font-size: 1.5em;
+    font-size: .75em;
     font-weight: 100;
     text-transform: uppercase;
     text-align: center;
@@ -35,5 +43,10 @@
     right: 0;
     letter-spacing: .425em;
     font-weight: 900;
+
+    @media only screen and (min-width: 600px) {
+      font-size: 1.5em;
+    }
+
   }
 }

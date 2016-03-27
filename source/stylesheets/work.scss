@@ -22,10 +22,23 @@
     margin: 0 auto;
     padding-top: 85px;
     @media only screen and (min-width: 760px) {
-      padding-top: 30px;
+      padding-top: 45px;
     }
   }
 
+  .social {
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      margin: 0 5px;
+    }
+  }
   .wrapper {
     padding: 0 20px;
     position: relative;
@@ -86,7 +99,7 @@
     overflow: hidden;
     display: flex;
     align-items: center;
-    margin: 90px auto 0 auto;
+    margin: 100px auto 0 auto;
     z-index: 12;
 
     li.slide {
