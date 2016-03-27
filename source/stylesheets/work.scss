@@ -21,6 +21,9 @@
     right: 0;
     margin: 0 auto;
     padding-top: 85px;
+    @media only screen and (min-width: 760px) {
+      padding-top: 30px;
+    }
   }
 
   .wrapper {
@@ -83,7 +86,7 @@
     overflow: hidden;
     display: flex;
     align-items: center;
-    margin: 0 auto;
+    margin: 90px auto 0 auto;
     z-index: 12;
 
     li.slide {

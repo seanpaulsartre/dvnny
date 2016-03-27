@@ -67,9 +67,9 @@ section {
     }
 
     img {
-      width: 60%;
+      width: 50%;
       @include breakpoint(tablet-desktop) {
-        width: 50%;
+        width: 42%;
         margin-top: 50px;
       }
     }
