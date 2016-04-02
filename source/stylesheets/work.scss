@@ -14,13 +14,19 @@
     margin-top: -5%;
   }
 
-  .title {
+  h1 {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     margin: 0 auto;
     padding-top: 85px;
+    font-family: 'Raleway';
+    font-size: 2em;
+    text-align: center;
+    letter-spacing: .22em;
+    text-transform: uppercase;
+    font-weight: 100;
     @media only screen and (min-width: 760px) {
       padding-top: 45px;
     }
