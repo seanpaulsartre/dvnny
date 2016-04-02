@@ -31,14 +31,24 @@
         max-width: 330px;
       }
     }
-
+    h1 {
+      font-family: 'Raleway';
+      font-size: 1.2em;
+      text-align: left;
+      letter-spacing: .12em;
+      font-weight: 100;
+      margin: 0;
+      @include breakpoint(tablet-desktop) {
+        padding-left: 60px;
+      }
+    }
     p {
       font-family: "Roboto Mono";
       font-size: .675em;
       letter-spacing: .09em;
       line-height: 1.75em;
       text-align: left;
-      margin-top: 20px;
+      margin-top: 5px;
       @include breakpoint(tablet-desktop) {
         padding-left: 60px;
       }

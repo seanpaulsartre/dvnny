@@ -19,13 +19,20 @@
     text-align: center;
   }
 
-  img {
+  h1 {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     margin: 0 auto;
-    z-index: 99999999999999999999,
+    z-index: 99999999999999999999;
+    font-family: 'Raleway';
+    font-size: 2em;
+    text-align: center;
+    letter-spacing: .22em;
+    text-transform: uppercase;
+    font-weight: 100;
+    margin: 0;
   }
 
   a {
